@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<!--Favicon-->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="~/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="~/css/StyleHome.css" rel="stylesheet" />
+</head>
+<body>
+
+
+	@Html.Partial("_header")
+
+
+
+	<!-- Page Content -->
+	<div class="container">
+
+		@RenderBody()
+
+	</div>
+
+
+
+
+
+
+
+	@Html.Partial("_footer")
+
+
+</body>
+</html>

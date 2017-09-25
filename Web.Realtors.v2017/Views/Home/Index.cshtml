@@ -1,0 +1,224 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+
+	<div class="col-md-3">
+		<p class="lead">Prime Realtors @@ 2017</p>
+		<div class="list-group">
+			<a href="#" class="list-group-item">Bandra West Lease 1 BHK</a>
+			<a href="#" class="list-group-item">Andheri West Lease 1 BHK</a>
+			<a href="#" class="list-group-item">Juhu Commercial Place</a>
+		</div>
+		<div class="list-group">
+			<h4>
+				<a href="#">Top 10 Features Of A Profitable Rental Property</a>
+			</h4>
+			<p>From the first decision to invest in real estate to actually buying your first rental property, there is a lot of work to be done. This task may be daunting for the first-time investor.</p>
+			<a class="btn btn-primary" target="_blank" href="#">View More</a>
+		</div>
+		<div class="list-group">
+			<h4>
+				<a href="#">Tips For The Prospective Landlord</a>
+			</h4>
+			<p>
+				Investing in rental real estate looks like a great idea on paper. You just buy a place in a nice area, find tenants and let the cash roll in.
+			</p>
+			<p>
+				You may also like:
+				<a target="_blank" href="#">Five Chart Patterns</a>
+			</p>
+		</div>
+		<div class="list-group">
+			<h4>
+				<a href="#">New Ways to Profit From Renting Out Single-Family Homes</a>
+			</h4>
+			<p>Companies Offer Investment Options That Are Alternatives to Being a Landlord on Your Own</p>
+			<a class="btn btn-primary" target="_blank" href="#">View More</a>
+		</div>
+		<div class="list-group">
+			<h4>
+				<a href="#">Flip or Hold: Best Real Estate Moves for 2015</a>
+			</h4>
+			<p>Whether it makes sense to flip or hold property depends entirely on your region. <a target="_blank" href="#">The big picture for 2015</a> on how to build a working review system for your online store!</p>
+			<a class="btn btn-primary" target="_blank" href="#">View More</a>
+		</div>
+	</div>
+
+	<div class="col-md-9">
+
+
+		@Html.Partial("_LargeCarousel")
+
+
+		<div class="row">
+
+
+
+			@{
+				var mini = new Web.Realtors.ViewModel.MiniView();
+				mini.Title = "Sea facing with parking";
+				mini.Rent = "25,000/-";
+				mini.MainImageSrc = "300x150_01.png";
+				mini.PropertyType = "1 Room Kitchen";
+				mini.Ratings = 4;
+				mini.TotalViews = 110;
+
+			}
+
+			@Html.Partial("_MiniView", mini)
+
+			@{
+                mini = new Web.Realtors.ViewModel.MiniView();
+				mini.Title = "Sea facing with parking";
+				mini.Rent = "25,000/-";
+				mini.MainImageSrc = "300x150_02.png";
+				mini.PropertyType = "1 BHK Apartment";
+				mini.Ratings = 4;
+				mini.TotalViews = 29;
+
+			}
+			@Html.Partial("_MiniView", mini)
+
+
+			@{
+                mini = new Web.Realtors.ViewModel.MiniView();
+				mini.Title = "Old heritagre building";
+				mini.Rent = "25,000/-";
+				mini.MainImageSrc = "300x150_03.png";
+				mini.PropertyType = "5 BHK Apartment";
+				mini.Ratings = 5;
+				mini.TotalViews = 90;
+
+			}
+			@Html.Partial("_MiniView", mini)
+
+
+			@{
+                mini = new Web.Realtors.ViewModel.MiniView();
+				mini.Title = "Old heritagre building";
+				mini.Rent = "25,000/-";
+				mini.MainImageSrc = "300x150_04.png";
+				mini.PropertyType = "5 BHK Apartment";
+				mini.Ratings = 5;
+				mini.TotalViews = 90;
+
+			}
+			@Html.Partial("_MiniView", mini)
+
+
+
+
+
+			@{
+				mini = new Web.Realtors.ViewModel.MiniView();
+				mini.Title = "Old heritagre building";
+				mini.Rent = "25,000/-";
+				mini.MainImageSrc = "300x150_05.png";
+				mini.PropertyType = "5 BHK Apartment";
+				mini.Ratings = 5;
+				mini.TotalViews = 90;
+
+			}
+			@Html.Partial("_MiniView", mini)
+
+
+			@{
+				mini = new Web.Realtors.ViewModel.MiniView();
+				mini.Title = "Old heritagre building";
+				mini.Rent = "25,000/-";
+				mini.MainImageSrc = "300x150_06.png";
+				mini.PropertyType = "5 BHK Apartment";
+				mini.Ratings = 5;
+				mini.TotalViews = 90;
+
+			}
+			@Html.Partial("_MiniView", mini)
+
+			@{
+				mini = new Web.Realtors.ViewModel.MiniView();
+				mini.Title = "Old heritagre building";
+				mini.Rent = "25,000/-";
+				mini.MainImageSrc = "300x150_07.png";
+				mini.PropertyType = "5 BHK Apartment";
+				mini.Ratings = 5;
+				mini.TotalViews = 90;
+
+			}
+			@Html.Partial("_MiniView", mini)
+
+
+
+
+
+			@{
+				mini = new Web.Realtors.ViewModel.MiniView();
+				mini.Title = "Old heritagre building";
+				mini.Rent = "25,000/-";
+				mini.MainImageSrc = "300x150_08.png";
+				mini.PropertyType = "5 BHK Apartment";
+				mini.Ratings = 5;
+				mini.TotalViews = 90;
+
+			}
+			@Html.Partial("_MiniView", mini)
+
+
+			@{
+				mini = new Web.Realtors.ViewModel.MiniView();
+				mini.Title = "Old heritagre building";
+				mini.Rent = "25,000/-";
+				mini.MainImageSrc = "300x150_09.png";
+				mini.PropertyType = "5 BHK Apartment";
+				mini.Ratings = 5;
+				mini.TotalViews = 90;
+
+			}
+			@Html.Partial("_MiniView", mini)
+
+
+
+
+
+
+
+
+			@*<div class="col-sm-4 col-lg-4 col-md-4">
+					<div class="thumbnail">
+						<img src="http://placehold.it/320x150" alt="">
+						<div class="caption">
+							<h4 class="pull-right">$84.99</h4>
+							<h4>
+								<a href="#">Fourth Product</a>
+							</h4>
+							<p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+						<div class="ratings">
+							<p class="pull-right">6 views</p>
+							<p>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</p>
+						</div>
+					</div>
+				</div>*@
+
+
+
+			@*<div class="col-sm-4 col-lg-4 col-md-4">
+					<h4>
+						<a href="#">Like this template?</a>
+					</h4>
+					<p>If you like this template, then check out <a target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-More-1-building-a-review-system/">this More</a> on how to build a working review system for your online store!</p>
+					<a class="btn btn-primary" target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-More-1-building-a-review-system/">View More</a>
+				</div>*@
+
+		</div>
+
+	</div>
+
+</div>

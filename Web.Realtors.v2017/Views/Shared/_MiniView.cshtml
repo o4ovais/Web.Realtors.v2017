@@ -1,0 +1,32 @@
+﻿@model Web.Realtors.ViewModel.MiniView
+
+<div class="col-sm-4 col-lg-4 col-md-4">
+	<div class="thumbnail">
+		<img src="~/CommonImages/@Model.MainImageSrc" alt="">
+		<div class="caption">
+			<h4 class="pull-right">Rs. @Model.Rent</h4>
+			<h4>
+				<a href="#">@Model.PropertyType</a>
+			</h4>
+			<p>@Model.Title <a target="_blank" href="http://www.bootsnipp.com">Bandra West</a>.</p>
+			
+		</div>
+		<div class="ratings">
+			<p class="pull-right">@Model.TotalViews views</p>
+			<p>
+				@for (int iCtr = 0; iCtr < Model.Ratings; iCtr++)
+				{
+					<span class="glyphicon glyphicon-star"></span>
+				}
+
+				@for (int iCtr = Model.Ratings; iCtr < 5; iCtr++)
+				{
+					<span class="glyphicon glyphicon-star-empty"></span>
+				}
+				
+				
+				
+			</p>
+		</div>
+	</div>
+</div>
